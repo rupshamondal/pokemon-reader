@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pokémon Reader</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Pokémon Reader</h1>
+    <input type="text" id="pokemonInput" placeholder="Enter Pokémon name or ID">
+    <button onclick="fetchPokemon()">Search</button>
+    <div id="pokemonCard" class="hidden">
+      <img id="pokemonImage" src="" alt="Pokemon">
+      <h2 id="pokemonName"></h2>
+      <p id="pokemonType"></p>
+      <ul id="pokemonStats"></ul>
+    </div>
+    <p id="error" class="error hidden"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
